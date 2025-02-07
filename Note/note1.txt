@@ -18,3 +18,9 @@ generate
 tạo trang danh sách trước (list)
 
 form-group nằm trong bootstrap 4 từ bootstrap 4 trở đi không dùng form-group nữa chuyển qua dùng mb-3 hoặc g-3
+
+guid
+xxx-xxx-...
+chữ thường hoặc số
+
+ma túi -> i=>y

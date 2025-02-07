@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model List<string>
 
 <div>
   @using (Html.BeginForm("Index", "ThuVienAnh", FormMethod.Post, new { enctype = "multipart/form-data" }))
@@ -11,12 +7,44 @@
     @* <input type="file" name="file" /> *@
     @* <input type="submit" value="Upload" /> *@
 
-    <div class="row g-3">
-      <div class="mb-3 col-md-6">
+    <div class="row g-3 align-items-end">
+      <div class="col-md-6">
         <label for="file" class="form-label">File</label>
-        <input type="file" class="form-control" id="file">
+        <input type="file" class="form-control" name="file">
       </div>
+      <div class="col-md-6">
+        <input type="submit" class="btn btn-primary form-control" name="submit"
+         value="Tải lên">
+      </div>
+
     </div>
 
   }
+</div>
+<br />
+<div class="container">
+  <div class="card border-primary">
+    <div class="card-header fw-bold border-primary">
+      Danh Sách Các Ảnh Được Tải Lên
+    </div>
+    
+    <div class="row">
+      @if (Model != null && Model.Any())
+      {
+        @foreach (var item in Model)
+        {
+          <div class="col-md-3">
+            <div class="alert alert-success">
+              <img src="~/img/@item" height="300px" width="200px" />
+            </div>
+          </div>
+        }
+      }
+      else
+      {
+        <div>Không có ảnh nào được tải lên cả!</div>
+      }
+    </div>
+
+  </div>
 </div>
