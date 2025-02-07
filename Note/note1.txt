@@ -1,0 +1,20 @@
+thư viện identity -> chức năng xác thực
+
+repository
+
+cách 1: lưu trong web server
+IIS -> web server (lưu code, giúp kết nối code với database)
+lưu trực tiếp file ảnh (lưu trong folder -> image/img)
+
+cách 2: mã hóa -> lưu trong database -> hash ảnh thành nhị phân
+
+làm project thư viện ảnh giúp người dụng tải ảnh lên và tải về xuống
+
+phụ thuộc vào vps -> ngay từ đầu phải xác định phiên bản .net
+vps -> đắt nhì (nhưng làm được nhiều trang web)
+server -> đắt nhất
+hosting -> rẻ nhất (chức năng bị cố định, làm 1 -> 2 trang web)
+generate
+tạo trang danh sách trước (list)
+
+form-group nằm trong bootstrap 4 từ bootstrap 4 trở đi không dùng form-group nữa chuyển qua dùng mb-3 hoặc g-3

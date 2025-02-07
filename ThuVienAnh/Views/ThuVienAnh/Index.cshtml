@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div>
+  @using (Html.BeginForm("Index", "ThuVienAnh", FormMethod.Post, new { enctype = "multipart/form-data" }))
+  {
+    @* <label for="file">Choose a file:</label> *@
+    @* <input type="file" name="file" /> *@
+    @* <input type="submit" value="Upload" /> *@
+
+    <div class="row g-3">
+      <div class="mb-3 col-md-6">
+        <label for="file" class="form-label">File</label>
+        <input type="file" class="form-control" id="file">
+      </div>
+    </div>
+
+  }
+</div>
