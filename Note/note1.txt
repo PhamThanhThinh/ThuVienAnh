@@ -24,3 +24,6 @@ xxx-xxx-...
 chữ thường hoặc số
 
 ma túi -> i=>y
+
+ViewBag.Message = "Tải lên thành công!";
+ViewData["Message"] = "Tải lên thành công!";
